@@ -23,10 +23,7 @@ export default function VerifyEmailPage({
 
     const verifyEmail = async () => {
       try {
-        // Replace with your production API URL
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
-
-        const response = await fetch(`${apiUrl}/api/v1/auth/verify-email?token=${encodeURIComponent(token)}`, {
+        const response = await fetch(`/api/v1/auth/verify-email?token=${encodeURIComponent(token)}`, {
           method: "GET",
           headers: {
             accept: "text/html",

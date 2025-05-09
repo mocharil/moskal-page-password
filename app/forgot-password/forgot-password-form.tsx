@@ -31,7 +31,7 @@ export function ForgotPasswordForm() {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:8000/api/v1/auth/forgot-password", {
+      const response = await fetch('/api/v1/auth/forgot-password', {
         method: "POST",
         headers: {
           accept: "application/json",

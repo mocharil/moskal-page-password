@@ -19,7 +19,7 @@ export function VerifyEmailContent({ token }: { token: string }) {
       try {
         // Using GET method instead of POST
         const response = await fetch(
-          `http://localhost:8000/api/v1/auth/verify-email?token=${encodeURIComponent(token)}`,
+          `/api/v1/auth/verify-email?token=${encodeURIComponent(token)}`,
           {
             method: "GET",
             headers: {

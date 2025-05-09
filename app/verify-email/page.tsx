@@ -24,12 +24,9 @@ export default function VerifyEmailPage({
     const verifyEmail = async () => {
       try {
         // Use the environment variable for the API URL
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"
-
         console.log("Verifying email with token:", token)
-        console.log("Using API URL:", apiUrl)
 
-        const response = await fetch(`${apiUrl}/api/v1/auth/verify-email?token=${encodeURIComponent(token)}`, {
+        const response = await fetch(`/api/v1/auth/verify-email?token=${encodeURIComponent(token)}`, {
           method: "GET",
           headers: {
             accept: "text/html",
