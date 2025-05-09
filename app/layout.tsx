@@ -2,9 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Moskal | AI Powered Social Media Monitoring',
+  description: 'AI-powered social media monitoring and analytics platform',
+  icons: {
+    icon: '/moskal-logo.png',
+    apple: '/moskal-logo.png',
+  },
 }
 
 export default function RootLayout({
