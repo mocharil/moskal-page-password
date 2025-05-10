@@ -85,7 +85,7 @@ export function ForgotPasswordForm() {
 
         <div className="pt-4">
           <Link
-            href="/login"
+            href={process.env.NEXT_PUBLIC_LOGIN_URL || "/login"}
             className="inline-flex items-center justify-center rounded-md bg-blue-700 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Back to Login
@@ -138,7 +138,7 @@ export function ForgotPasswordForm() {
             Try Again
           </button>
           <Link
-            href="/login"
+            href={process.env.NEXT_PUBLIC_LOGIN_URL || "/login"}
             className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-6 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Back to Login
@@ -191,7 +191,7 @@ export function ForgotPasswordForm() {
       </button>
 
       <div className="mt-4 text-center text-sm">
-        <Link href="/login" className="font-medium text-blue-600 hover:text-blue-500">
+        <Link href={process.env.NEXT_PUBLIC_LOGIN_URL || "/login"} className="font-medium text-blue-600 hover:text-blue-500">
           Back to Login
         </Link>
       </div>

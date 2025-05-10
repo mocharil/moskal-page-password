@@ -88,7 +88,7 @@ export function VerifyEmailContent({ token }: { token: string }) {
 
         <div className="pt-4">
           <Link
-            href="/login"
+            href={process.env.NEXT_PUBLIC_LOGIN_URL || "/login"}
             className="inline-flex items-center justify-center rounded-md bg-blue-700 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Sign In
@@ -118,7 +118,7 @@ export function VerifyEmailContent({ token }: { token: string }) {
 
         <div className="pt-4">
           <Link
-            href="/login"
+            href={process.env.NEXT_PUBLIC_LOGIN_URL || "/login"}
             className="inline-flex items-center justify-center rounded-md bg-blue-700 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Back to Login
@@ -146,11 +146,11 @@ export function VerifyEmailContent({ token }: { token: string }) {
       </div>
 
       <div className="pt-4 space-x-4">
-        <Link
-          href="/login"
-          className="inline-flex items-center justify-center rounded-md bg-blue-700 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-        >
-          Back to Login
+          <Link
+            href={process.env.NEXT_PUBLIC_LOGIN_URL || "/login"}
+            className="inline-flex items-center justify-center rounded-md bg-blue-700 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
+            Back to Login
         </Link>
         <Link
           href="/support"

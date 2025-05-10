@@ -175,7 +175,7 @@ export function ResetPasswordForm({ token }: { token: string }) {
         </div>
 
         <div className="mt-4 text-center text-sm">
-          <Link href="/login" className="font-medium text-blue-600 hover:text-blue-500">
+          <Link href={process.env.NEXT_PUBLIC_LOGIN_URL || "/login"} className="font-medium text-blue-600 hover:text-blue-500">
             Back to Login
           </Link>
         </div>
@@ -214,7 +214,7 @@ export function ResetPasswordForm({ token }: { token: string }) {
         </div>
 
         <div className="mt-4 text-center text-sm">
-          <Link href="/login" className="font-medium text-blue-600 hover:text-blue-500">
+          <Link href={process.env.NEXT_PUBLIC_LOGIN_URL || "/login"} className="font-medium text-blue-600 hover:text-blue-500">
             Back to Login
           </Link>
         </div>
@@ -314,7 +314,7 @@ export function ResetPasswordForm({ token }: { token: string }) {
       </button>
 
       <div className="mt-4 text-center text-sm">
-        <Link href="/login" className="font-medium text-blue-600 hover:text-blue-500">
+        <Link href={process.env.NEXT_PUBLIC_LOGIN_URL || "/login"} className="font-medium text-blue-600 hover:text-blue-500">
           Back to Login
         </Link>
       </div>
